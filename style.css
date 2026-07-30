@@ -37,7 +37,7 @@
 
     position: relative;
     text-align: center;
-    color: #E8E7DD;
+    color: #dde8e7;
     overflow: hidden;
 }
 
@@ -49,21 +49,36 @@
     animation: aparecer 1.3s ease;
 }
 
-.livro {
-    position: absolute;
-    font-size: 30px;
-    animation: flutuar 6s infinite ease-in-out;
-    opacity: 0.7;
+
+.caixa-cartoes{
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.livro1 { top: 10%; left: 10%; }
-.livro2 { top: 20%; right: 15%; }
-.livro3 { bottom: 15%; left: 20%; }
-.livro4 { bottom: 20%; right: 10%; }
-.livro5 { top: 50%; left: 5%; }
+.caixote{
+    width: 300px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px 10px #888888;
 
-@keyframes flutuar {
-    0%,100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
 }
 
+.caixote img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.item h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item p{
+    padding: 5px;
+    text-align: justify;
+}
