@@ -1,3 +1,4 @@
+/*corpo do site*/
 *{
     margin:0;
     padding:0;
@@ -15,12 +16,25 @@ body{
     line-height:1.8;
 }
 
+section{
+    width:80%;
+    max-width:1000px;
+    margin:50px auto;
+}
+
+/*titulo*/
+h2{
+    color:#16344f;
+    margin-bottom:20px;
+    padding-left:15px;
+}
+
 header{
     background:#16344f;
     color:white;
     text-align:center;
     padding:40px 20px;
-}
+}id
 
 header h1{
    font-weight: 700;
@@ -49,6 +63,40 @@ header p{
    color:#68ade9
 }
 
+/*conteúdo*/
+.sobre{
+    background:#82c9d0;
+    color:rgb(90, 85, 85);
+    text-align:center;
+    padding:20px;
+    margin-top:60px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px 10px #4897b6;
+}
+.analise{
+    background:#82c9d0;
+    color:black;
+    text-align:center;
+    padding:20px;
+    margin-top:60px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px 10px #7d8283;
+}
+
+/*lista*/
+ul{
+    margin-left:25px;
+}
+.temas{
+    background:#509fad;
+    color:black;
+    padding:20px;
+    margin-top:60px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px 10px #4897b6;
+}
+
+/*navegação*/
 nav a{
     color:white;
     text-decoration:none;
@@ -60,40 +108,51 @@ nav a:hover{
     color:#8dc8ff;
 }
 
+/*imagem do livro*/
 .capa{
     display:flex;
     justify-content:center;
     margin:40px 0;
 }
 
-.capa img{
+.capa img{.sobre{
+    background:#509fad;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:60px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px 10px #4897b6;
+}
     width:260px;
     border-radius:15px;
     box-shadow:0 10px 30px rgba(0,0,0,.2);
 }
-
-section{
-    width:80%;
-    max-width:1000px;
-    margin:50px auto;
+.item h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h2{
-    color:#16344f;
-    margin-bottom:20px;
-    padding-left:15px;
+.item p{
+    padding: 5px;
+    text-align: justify;
 }
 
-ul{
-    margin-left:25px;
-    background:rgb(56, 140, 145);
-    padding:20px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(247, 6, 6, 0.1);
-    flex:1;
-    min-width:250px;
+/*livros flotuantes*/
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("assets/desenhoDRE.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
 }
 
+/*caixa, roda pé*/
 footer{
     background:#16344f;
     color:white;
@@ -102,7 +161,7 @@ footer{
     margin-top:60px;
 }
 
-
+/*caixa*/
 .caixa{
     width: 100%;
     display: flex;
@@ -128,15 +187,4 @@ footer{
 .caixote img{
     width: 100%;
     border-radius: 15px;
-}
-
-.item h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.item p{
-    padding: 5px;
-    text-align: justify;
 }
