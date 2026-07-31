@@ -1,84 +1,119 @@
-
-.imagem {
-    height: 40vh;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-    url("https://www.editorasulina.com.br/img/thumbs/615.jpg") center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.hero-texto h1 {
-    text-align: center;
-    font-size: 60px;
-    animation: aparecer 1s ease, glow 2.5s ease-in-out infinite;
-    color: #bdebf3;
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#82c9d0;
+    color:#222;
+    line-height:1.8;
+}
+
+header{
+    background:#16344f;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+   font-weight: 700;
+   text-align: center;
+   font-size: 65px;
+   animation: glow 2.5s ease-in-out infinite;
+   color: #bdebf3;
 }
 @keyframes glow {
     0% {
-        text-shadow: 0 0 5px #b6f4ff, 0 0 10px #b6fdff;
+    text-shadow: 0 0 5px #96dce9, 0 0 10px #95d3d5;
     }
     50% {
-        text-shadow: 0 0 15px #d1f6ff, 0 0 25px #b6fdff;
+    text-shadow: 0 0 15px #7ac0d2, 0 0 25px #87e6e9;
     }
     100% {
-        text-shadow: 0 0 5px #b6ffff, 0 0 10px #b6fdff;
+    text-shadow: 0 0 5px #5cb2b2, 0 0 10px #59b1b4;
     }
 }
 
-.hero {
-    height: 90vh;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-  center/cover no-repeat;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    position: relative;
-    text-align: center;
-    color: #dde8e7;
-    overflow: hidden;
+header p{
+   font-size: 25px;
+   margin-top: 10px;
+   max-width: 500px;
+   margin-inline: auto;
+   color:#68ade9
 }
 
-.hero-texto p {
-    font-size: 18px;
-    margin-top: 10px;
-    max-width: 500px;
-    margin-inline: auto;
-    animation: aparecer 1.3s ease;
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
 }
 
-
-.caixa-cartoes{
-    display: flex;
-    justify-content: space-evenly;
+nav a:hover{
+    color:#8dc8ff;
 }
 
-.caixote{
-    width: 300px;
-    height: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid gray;
-    border-radius: 15px;
-    box-shadow: 2px 2px 5px 10px #888888;
-
+.capa{
+    display:flex;
+    justify-content:center;
+    margin:40px 0;
 }
 
-.caixote img{
-    width: 100%;
-    border-radius: 15px;
+.capa img{
+    width:260px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
 }
 
-.item h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+section{
+    width:80%;
+    max-width:1000px;
+    margin:50px auto;
 }
 
-.item p{
-    padding: 5px;
-    text-align: justify;
+h2{
+    color:#16344f;
+    margin-bottom:20px;
+    border-left:6px solid #16344f;
+    padding-left:15px;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:rgb(193, 235, 237);
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    flex:1;
+    min-width:250px;
+}
+
+ul{
+    margin-left:25px;
+    background:rgb(56, 140, 145);
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(247, 6, 6, 0.1);
+    flex:1;
+    min-width:250px;
+}
+
+footer{
+    background:#16344f;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:60px;
 }
